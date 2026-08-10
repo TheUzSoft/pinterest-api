@@ -1,0 +1,35 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Pinterest API",
+    "version": "1.0.0",
+    "description": "Download images, videos, and stats from Pinterest Pins."
+  },
+  "servers": [
+    {
+      "url": "https://pinterest-api-pinterest-scraper-fast.p.rapidapi.com"
+    }
+  ],
+  "paths": {
+    "/api/v1/download": {
+      "get": {
+        "summary": "Pinterest media downloader",
+        "parameters": [
+          {
+            "name": "url",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Pinterest data response"
+          }
+        }
+      }
+    }
+  }
+}

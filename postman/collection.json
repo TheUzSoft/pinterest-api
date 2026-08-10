@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Pinterest API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Pinterest media downloader",
+      "request": {
+        "method": "GET",
+        "header": [
+          {
+            "key": "X-RapidAPI-Key",
+            "value": "{{RAPIDAPI_KEY}}"
+          },
+          {
+            "key": "X-RapidAPI-Host",
+            "value": "pinterest-api-pinterest-scraper-fast.p.rapidapi.com"
+          }
+        ],
+        "url": {
+          "raw": "https://pinterest-api-pinterest-scraper-fast.p.rapidapi.com/api/v1/download",
+          "protocol": "https",
+          "host": [
+            "pinterest-api-pinterest-scraper-fast.p.rapidapi.com"
+          ],
+          "path": [
+            "api",
+            "v1",
+            "download"
+          ]
+        }
+      }
+    }
+  ]
+}
